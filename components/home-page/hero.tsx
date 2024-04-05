@@ -32,7 +32,7 @@ export default function HeroSection() {
         <CarouselContent>
           {slides.map((slide, index) => (
             <CarouselItem key={slide.id}>
-              <img alt="Banner" src={slide.src} className="object-cover" />
+              <img alt="Banner" src={slide.src} className="min-h-[200px] object-cover" />
             </CarouselItem>
           ))}
         </CarouselContent>

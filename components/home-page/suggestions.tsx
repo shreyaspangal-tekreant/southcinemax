@@ -9,8 +9,8 @@ export default function Suggestions({ title, slides, type = "horizontal" }: any)
   return (
     <section className="suggestions max-w-[1440px] mx-auto p-[1.5rem] pt-[3rem] xl:py-[2.88rem] xl:px-[4.38rem]">
       <div className="flex items-center gap-2">
-        <h2 className="text-[0.75rem] md:text-[1rem] lg:text-[1.25rem] text-[#E5E5E5]">{title}</h2>
-        <button type="button" className="text-[#D49941] flex items-center">
+        <h2 className="text-[0.88rem] md:text-[1rem] lg:text-[1.25rem] text-[#E5E5E5]">{title}</h2>
+        <button type="button" className="text-[0.88rem] md:text-[1rem] text-[#D49941] flex items-center">
           Explore All
           <BiSolidChevronRight className="text-[#D49941] w-[25px] h-[25px] object-cover" />
         </button>

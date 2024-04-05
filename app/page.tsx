@@ -8,16 +8,15 @@ import AddHolder from "@/components/home-page/add-holder";
 import LatestNews from "@/components/home-page/latest-news";
 import Sponsers from "@/components/home-page/sponsers";
 import MainFooter from "@/components/main-footer";
+import DATA from "@/data/home.json";
 
-const slides = [
-  { id: 1, src: "/images/home/hero-banner-img.webp" },
-  { id: 2, src: "/images/home/hero-banner-img.webp" },
-  { id: 3, src: "/images/home/hero-banner-img.webp" },
-  { id: 4, src: "/images/home/hero-banner-img.webp" },
-  { id: 5, src: "/images/home/hero-banner-img.webp" },
-  { id: 6, src: "/images/home/hero-banner-img.webp" },
-  { id: 7, src: "/images/home/hero-banner-img.webp" },
-];
+const EXCLUSIVE_INTERVIEWS = DATA.exclusiveInterviews;
+const MOVIE_PROMOTIONS = DATA.moviePromotions;
+const BIG_BOSS = DATA.bigBoss;
+const POPULAR_EVENTS = DATA.popularEvents;
+const MAGAZINES = DATA.magazines;
+const LATEST_NEWS = DATA.latestNews;
+const LIFESTYLE = DATA.lifestyle;
 
 export default function Home() {
   return (
@@ -25,16 +24,16 @@ export default function Home() {
       <MainNav />
       <main className="wix-madefor">
         <HeroSection />
-        <Suggestions title="Exclusive Interviews" slides={slides} />
-        <Suggestions title="Movie Promotions" slides={slides} />
-        <Suggestions title="Telugu Big Boss" slides={slides} />
-        <Suggestions title="Popular Events" slides={slides} />
-        <Suggestions title="Magazines" slides={slides} type="vertical" />
+        <Suggestions title="Exclusive Interviews" slides={EXCLUSIVE_INTERVIEWS} />
+        <Suggestions title="Movie Promotions" slides={MOVIE_PROMOTIONS} />
+        <Suggestions title="Telugu Big Boss" slides={BIG_BOSS} />
+        <Suggestions title="Popular Events" slides={POPULAR_EVENTS} />
+        <Suggestions title="Magazines" slides={MAGAZINES} type="vertical" />
         <RegisterCtaBlock />
         <VideoSchowcaseBanner />
-        <Lifestyle />
+        <Lifestyle list={LIFESTYLE} />
         <AddHolder />
-        <LatestNews />
+        <LatestNews list={LATEST_NEWS} />
         <Sponsers />
       </main>
       <MainFooter />

@@ -1,0 +1,54 @@
+{
+  "exclusiveInterviews": [
+    { "id": 1, "src": "/images/home/interviews-01.webp" },
+    { "id": 2, "src": "/images/home/interviews-02.webp" },
+    { "id": 3, "src": "/images/home/interviews-03.webp" }
+  ],
+  "moviePromotions": [
+    { "id": 1, "src": "/images/home/moviePromotions-01.webp" },
+    { "id": 2, "src": "/images/home/moviePromotions-02.webp" },
+    { "id": 3, "src": "/images/home/moviePromotions-02.webp" }
+  ],
+  "bigBoss": [
+    { "id": 1, "src": "/images/home/bigboss-01.webp" },
+    { "id": 2, "src": "/images/home/bigboss-02.webp" },
+    { "id": 3, "src": "/images/home/bigboss-03.webp" },
+    { "id": 4, "src": "/images/home/bigboss-04.webp" },
+    { "id": 5, "src": "/images/home/bigboss-05.webp" },
+    { "id": 6, "src": "/images/home/bigboss-06.webp" },
+    { "id": 7, "src": "/images/home/bigboss-07.webp" }
+  ],
+  "popularEvents": [
+    { "id": 1, "src": "/images/home/bigboss-01.webp" },
+    { "id": 2, "src": "/images/home/bigboss-02.webp" },
+    { "id": 3, "src": "/images/home/bigboss-03.webp" }
+  ],
+  "magazines": [
+    { "id": 1, "src": "/images/home/magazines-01.webp" },
+    { "id": 2, "src": "/images/home/magazines-02.webp" },
+    { "id": 3, "src": "/images/home/magazines-03.webp" },
+    { "id": 4, "src": "/images/home/magazines-04.webp" },
+    { "id": 5, "src": "/images/home/magazines-05.webp" },
+    { "id": 6, "src": "/images/home/magazines-06.webp" }
+  ],
+  "lifestyle": [
+    { "src": "/images/home/lifestyle-01.webp" },
+    { "src": "/images/home/lifestyle-02.webp" },
+    { "src": "/images/home/lifestyle-03.webp" },
+    { "src": "/images/home/lifestyle-04.webp" },
+    { "src": "/images/home/lifestyle-05.webp" },
+    { "src": "/images/home/lifestyle-06.webp" }
+  ],
+  "latestNews": [
+    { "src": "/images/home/latestNews-01.webp" },
+    { "src": "/images/home/latestNews-02.webp" },
+    { "src": "/images/home/latestNews-03.webp" },
+    { "src": "/images/home/latestNews-04.webp" },
+    { "src": "/images/home/latestNews-05.webp" },
+    { "src": "/images/home/latestNews-06.webp" },
+    { "src": "/images/home/latestNews-07.webp" },
+    { "src": "/images/home/latestNews-08.webp" },
+    { "src": "/images/home/latestNews-09.webp" },
+    { "src": "/images/home/latestNews-10.webp" }
+  ]
+}

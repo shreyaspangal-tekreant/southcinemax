@@ -1,15 +1,6 @@
 import { FiArrowRight } from "react-icons/fi";
 
-const list = [
-  { src: "/images/home/lifestyle-01.webp" },
-  { src: "/images/home/lifestyle-02.webp" },
-  { src: "/images/home/lifestyle-03.webp" },
-  { src: "/images/home/lifestyle-04.webp" },
-  { src: "/images/home/lifestyle-05.webp" },
-  { src: "/images/home/lifestyle-06.webp" },
-];
-
-export default function Lifestyle() {
+export default function Lifestyle({ list }: any) {
   return (
     <section className="bg-[#161616]">
       <div className="max-w-[1440px] mx-auto p-[1.5rem] pt-[3rem] xl:py-[2.88rem] xl:px-[4.06rem] ">
@@ -23,7 +14,7 @@ export default function Lifestyle() {
           </div>
           <div className="right-block">
             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-[19.38rem_19.38rem_19.38rem] gap-10">
-              {list.map((card, index) => (
+              {list.map((card: any, index: number) => (
                 <div className="">
                   <img src={card.src} alt="" className="object-cover" />
                 </div>

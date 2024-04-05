@@ -31,3 +31,7 @@ export const nextBtnVariants = {
     transition: { delay: 0.05, duration: 1 },
   },
 };
+
+export const exploreBtnVariants = {
+  hover: { x: 10, transition: { duration: 0.2 } },
+};

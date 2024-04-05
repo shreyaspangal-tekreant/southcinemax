@@ -3,7 +3,7 @@ import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrig
 export default function RegisterCtaBlock() {
   return (
     <section className="max-w-[1440px] mx-auto p-[1.5rem] pt-[3rem] xl:py-[2.88rem] xl:px-[4.38rem]">
-      <div className="flex flex-col xl:flex-row items-center justify-between gap-3">
+      <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
         <div className="left-block max-w-[31.06rem] w-full">
           <p className="mb-[1.1rem] uppercase text-[1.56rem] text-[#fff] font-normal">Register Now</p>
           <p className="mb-0 text-[3rem] text-[#fff] font-extrabold leading-[1.2]">
@@ -35,8 +35,8 @@ export default function RegisterCtaBlock() {
             </Select>
           </div>
           {/* my-[2.19rem] */}
-          <div className="flex justify-end items-end mt-[2.19rem]">
-            <button type="button" className="hidden lg:block rounded-[50px] bg-[#585858] text-[#fff] px-[3.81rem] py-[0.75rem] font-bold hover:opacity-75">
+          <div className="flex justify-center lg:justify-end items-center mt-[2.19rem]">
+            <button type="button" className="rounded-[50px] bg-[#585858] text-[#fff] px-[3.81rem] py-[0.75rem] font-bold hover:opacity-75">
               Contact
             </button>
           </div>

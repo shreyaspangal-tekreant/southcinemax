@@ -4,16 +4,20 @@ import { BiSolidChevronRight } from "react-icons/bi";
 import { CgChevronLeft, CgChevronRight } from "react-icons/cg";
 import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
-import { prevBtnVariants, nextBtnVariants, exploreBtnVariants } from "@/animations/home/suggestionsAnimations";
+import { prevBtnVariants, nextBtnVariants, seeAllTextVariants, seeAllIconVariants } from "@/animations/home/suggestionsAnimations";
+import useDimension from "@/hooks/useDimensions";
 
 export default function Suggestions({ title, slides: slidesInit, type = "horizontal" }: any) {
+  const { width } = useDimension();
+
   const horizontalCardStyles = "md:basis-1/2 lg:basis-1/3 h-[15.75rem]";
-  const verticalCardStyles = "min-[425px]:basis-1/2 md:basis-1/3 lg:basis-1/6 h-[15.75rem]";
-  const CarouselItemStyles = type === "horizontal" ? horizontalCardStyles : verticalCardStyles;
+  const verticalCardStyles = "basis-1/2 min-[390px]:basis-1/3 lg:basis-1/6 h-[15.75rem]";
+  const CarouselItemStyles = type === "vertical" || width < 1024 ? verticalCardStyles : horizontalCardStyles;
 
   const [api, setApi] = React.useState<CarouselApi>();
   const [slides, setSlides] = React.useState(slidesInit);
-  const [hovered, setHovered] = React.useState(false);
+  const [videoHovered, setVideoHovered] = React.useState(false);
+  const [isTitleHovered, setIsTitleHovered] = React.useState(false);
   const [slidePrev, setSlidePrev] = React.useState(false);
   const [slideNext, setSlideNext] = React.useState(false);
 
@@ -41,27 +45,28 @@ export default function Suggestions({ title, slides: slidesInit, type = "horizon
 
   return (
     <section className="suggestions max-w-[1440px] mx-auto p-[1.5rem] pt-[3rem] xl:py-[2.88rem] xl:px-[4.38rem]">
-      <div className="flex items-center gap-2">
-        <h2 className="text-[0.88rem] md:text-[1rem] lg:text-[1.25rem] text-[#E5E5E5]">{title}</h2>
-        <motion.button whileHover="hover" variants={exploreBtnVariants} type="button" className="text-[0.88rem] md:text-[1rem] text-[#D49941] flex items-center">
-          Explore All
-          <motion.div variants={exploreBtnVariants}>
-            <BiSolidChevronRight className="text-[#D49941] w-[25px] h-[25px] object-cover" />
-          </motion.div>
-        </motion.button>
+      <div className="header">
+        <motion.div onHoverStart={() => setIsTitleHovered(true)} onHoverEnd={() => setIsTitleHovered(false)} className="w-full lg:w-fit flex items-end justify-between lg:justify-start gap-2">
+          <h2 className="text-[1.13rem] lg:text-[1.25rem] text-[#E5E5E5]">{title}</h2>
+          <button type="button" className="flex items-center">
+            <motion.p key="seeAllText" variants={width > 1023 ? seeAllTextVariants : undefined} animate={isTitleHovered ? "animate" : "initial"} className="lg:opacity-0 mb-0 text-[0.88rem] md:text-[1rem] text-[#D49941] shrink-0">See All</motion.p>
+            <motion.div variants={width > 1023 ? seeAllIconVariants : undefined} initial="initial" animate={isTitleHovered ? "animate" : "initial"}>
+              <BiSolidChevronRight className="text-[#D49941] w-[25px] h-[25px] object-cover" />
+            </motion.div>
+          </button>
+        </motion.div>
       </div>
-      <motion.div onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)} className="overflow-hidden pt-[0.81rem]">
+      <motion.div onMouseEnter={() => setVideoHovered(true)} onMouseLeave={() => setVideoHovered(false)} className="overflow-hidden pt-[0.81rem]">
         <Carousel setApi={setApi} className="relative">
           <CarouselContent>
             {slides.map((slide: any, index: number) => (
               <CarouselItem key={slide.id} className={CarouselItemStyles}>
                 <img alt="Banner" src={slide.src} className="w-full h-full rounded-[5px] object-cover" />
-                {/* whileHover={{ scale: 1.2, transition: { duration: 0.2 } }} */}
               </CarouselItem>
             ))}
           </CarouselContent>
-          <AnimatePresence>{hovered && <PreviousBtn handlePrevBtn={handlePrevBtn} />}</AnimatePresence>
-          <AnimatePresence>{hovered && <NextBtn handleNextBtn={handleNextBtn} />}</AnimatePresence>
+          <AnimatePresence>{videoHovered && <PreviousBtn handlePrevBtn={handlePrevBtn} />}</AnimatePresence>
+          <AnimatePresence>{videoHovered && <NextBtn handleNextBtn={handleNextBtn} />}</AnimatePresence>
         </Carousel>
       </motion.div>
     </section>

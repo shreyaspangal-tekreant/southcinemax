@@ -32,7 +32,7 @@ export default function HeroSection() {
         <CarouselContent>
           {slides.map((slide, index) => (
             <CarouselItem key={slide.id}>
-              <img alt="Banner" src={slide.src} className="min-h-[200px] object-cover" />
+              <img alt="Banner" src={slide.src} className="min-h-[200px] rounded-[15px] object-cover" />
             </CarouselItem>
           ))}
         </CarouselContent>
@@ -44,7 +44,7 @@ export default function HeroSection() {
 
 function NavDots({ slides }: any) {
   return (
-    <div className="max-w-[300px] mx-auto absolute left-1/2 -translate-x-2/4 flex justify-center items-center gap-2 mt-[-30px]">
+    <div className="max-w-[300px] mx-auto absolute left-1/2 -translate-x-2/4 flex justify-center items-center gap-2 mt-[15px] lg:mt-[-30px]">
       {slides.map((slide: any, index: number) => (
         <div key={slide.id} className={`w-3 h-3 rounded-full ${slide.active ? "bg-[#D39841]" : "bg-[#666666]"}`}></div>
       ))}

@@ -28,16 +28,16 @@ export default function MainFooter() {
     <footer className="bg-[#1A1A1A]">
       <div className="max-w-[1440px] mx-auto p-[1.5rem] pt-[3rem] xl:py-[2.88rem] xl:px-[4.38rem]">
         <div className="flex flex-col lg:flex-row justify-between items-start gap-10">
-          <div className="follow-us-on">
+          <div className="follow-us-on order-2 md:order-0">
             <p className="mb-[0.38rem] text-[0.88rem] text-[#D49941] font-bold">Follow us on</p>
-            <div className="flex items-center gap-[15px]">
+            <div className="flex items-center gap-[2rem] md:gap-[15px]">
               <AiOutlineFacebook className="text-[#666666] w-[30px] h-[30px] cursor-pointer" />
               <BsTwitterX className="text-[#666666] w-[30px] h-[30px] cursor-pointer" />
               <BsInstagram className="text-[#666666] w-[30px] h-[30px] cursor-pointer" />
               <AiOutlineLinkedin className="text-[#666666] w-[30px] h-[30px] cursor-pointer" />
             </div>
           </div>
-          <div className="quick-links">
+          <div className="quick-links order-1 md:order-1">
             <p className="mb-[0.38rem] text-[0.88rem] text-[#D49941] font-bold">Quick Links</p>
             <div className="flex flex-col sm:flex-row sm:gap-20">
               <ul className="">
@@ -56,7 +56,7 @@ export default function MainFooter() {
               </ul>
             </div>
           </div>
-          <div className="newsletter">
+          <div className="newsletter w-full md:w-auto order-0 md:order-2">
             <p className="text-[1.13rem] text-[#6A6A6A] mb-[1rem]">Newsletter Subscription:</p>
             <div className="relative w-full sm:w-[350px] ring-1 ring-[#999999] rounded-[5px]">
               <img alt="Email" src="/images/email-icon.png" className="absolute left-3 top-3 w-[30px] h-[20px] object-contain" />

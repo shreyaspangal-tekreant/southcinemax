@@ -1,158 +1,181 @@
 {
+  "blurImg": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAZABkAAD/7AARRHVja3kAAQAEAAAAZAAA/9sAQwABAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQECAgEBAgEBAQICAgICAgICAgECAgICAgICAgIC/9sAQwEBAQEBAQEBAQEBAgEBAQICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIC/8AAEQgACgAKAwERAAIRAQMRAf/EABUAAQEAAAAAAAAAAAAAAAAAAAUK/8QAKBAAAQEHAgUFAAAAAAAAAAAAAQYAAgMEBREhJFEHCBIVJTEyQkTw/8QAFwEAAwEAAAAAAAAAAAAAAAAAAgQGA//EACcRAAIBAQYFBQAAAAAAAAAAAAECAwAEERIVIUEGIjHR8BQjQlJh/9oADAMBAAIRAxEAPwCuCQ5uOHE7KQprvcl0xoYfGph5uBf5Z/YazTh53RZFYXVL5qGdonHOp8860TE5ruHXW/5uS9732RudixZdh0xDTTetPWx7g1FQn1erAn6XZUKLMCFfzdSzh311OWUSaYWeO6Vhyn5HvSEyrmdqGEXY22/aTCsVJAJUtfJIBJNZqNydzqWSaaW8+63X7HvRlVvOgr//2Q==",
   "exclusiveInterviews": [
     {
       "id": 1,
-      "src": "/images/home/interviews-01.webp"
+      "mobileSrc": "/images/home/exclusive-interviews/mobile-01.webp",
+      "desktopSrc": "/images/home/exclusive-interviews/desktop-01.webp"
     },
     {
       "id": 2,
-      "src": "/images/home/interviews-02.webp"
+      "mobileSrc": "/images/home/exclusive-interviews/mobile-02.webp",
+      "desktopSrc": "/images/home/exclusive-interviews/desktop-02.webp"
     },
     {
       "id": 3,
-      "src": "/images/home/interviews-03.webp"
+      "mobileSrc": "/images/home/exclusive-interviews/mobile-03.webp",
+      "desktopSrc": "/images/home/exclusive-interviews/desktop-03.webp"
     }
   ],
   "moviePromotions": [
     {
       "id": 1,
-      "src": "/images/home/moviePromotions-01.webp"
+      "mobileSrc": "/images/home/movie-promotions/mobile-01.webp",
+      "desktopSrc": "/images/home/movie-promotions/desktop-01.webp"
     },
     {
       "id": 2,
-      "src": "/images/home/moviePromotions-02.webp"
+      "mobileSrc": "/images/home/movie-promotions/mobile-02.webp",
+      "desktopSrc": "/images/home/movie-promotions/desktop-02.webp"
     },
     {
       "id": 3,
-      "src": "/images/home/moviePromotions-02.webp"
+      "mobileSrc": "/images/home/movie-promotions/mobile-03.webp",
+      "desktopSrc": "/images/home/movie-promotions/desktop-01.webp"
     }
   ],
   "bigBoss": [
     {
       "id": 1,
-      "src": "/images/home/bigboss-01.webp"
+      "mobileSrc": "/images/home/bigboss/mobile-01.webp",
+      "desktopSrc": "/images/home/bigboss/desktop-01.webp"
     },
     {
       "id": 2,
-      "src": "/images/home/bigboss-02.webp"
+      "mobileSrc": "/images/home/bigboss/mobile-02.webp",
+      "desktopSrc": "/images/home/bigboss/desktop-02.webp"
     },
     {
       "id": 3,
-      "src": "/images/home/bigboss-03.webp"
+      "mobileSrc": "/images/home/bigboss/mobile-03.webp",
+      "desktopSrc": "/images/home/bigboss/desktop-03.webp"
     },
     {
       "id": 4,
-      "src": "/images/home/bigboss-04.webp"
+      "mobileSrc": "/images/home/bigboss/mobile-04.webp",
+      "desktopSrc": "/images/home/bigboss/desktop-04.webp"
     },
     {
       "id": 5,
-      "src": "/images/home/bigboss-05.webp"
+      "mobileSrc": "/images/home/bigboss/mobile-05.webp",
+      "desktopSrc": "/images/home/bigboss/desktop-05.webp"
     },
     {
       "id": 6,
-      "src": "/images/home/bigboss-06.webp"
+      "mobileSrc": "/images/home/bigboss/mobile-06.webp",
+      "desktopSrc": "/images/home/bigboss/desktop-06.webp"
     },
     {
       "id": 7,
-      "src": "/images/home/bigboss-07.webp"
+      "mobileSrc": "/images/home/bigboss/mobile-07.webp",
+      "desktopSrc": "/images/home/bigboss/desktop-07.webp"
     }
   ],
   "popularEvents": [
     {
       "id": 1,
-      "src": "/images/home/bigboss-01.webp"
+      "mobileSrc": "/images/home/popular-events/mobile-01.webp",
+      "desktopSrc": "/images/home/popular-events/desktop-01.webp"
     },
     {
       "id": 2,
-      "src": "/images/home/bigboss-02.webp"
+      "mobileSrc": "/images/home/popular-events/mobile-02.webp",
+      "desktopSrc": "/images/home/popular-events/desktop-02.webp"
     },
     {
       "id": 3,
-      "src": "/images/home/bigboss-03.webp"
+      "mobileSrc": "/images/home/popular-events/mobile-03.webp",
+      "desktopSrc": "/images/home/popular-events/desktop-03.webp"
     }
   ],
   "magazines": [
     {
       "id": 1,
-      "src": "/images/home/magazines-01.webp"
+      "mobileSrc": "/images/home/magazines/mobile-01.webp",
+      "desktopSrc": "/images/home/magazines/desktop-01.webp"
     },
     {
       "id": 2,
-      "src": "/images/home/magazines-02.webp"
+      "mobileSrc": "/images/home/magazines/mobile-02.webp",
+      "desktopSrc": "/images/home/magazines/desktop-02.webp"
     },
     {
       "id": 3,
-      "src": "/images/home/magazines-03.webp"
+      "mobileSrc": "/images/home/magazines/mobile-03.webp",
+      "desktopSrc": "/images/home/magazines/desktop-03.webp"
     },
     {
       "id": 4,
-      "src": "/images/home/magazines-04.webp"
+      "mobileSrc": "/images/home/magazines/mobile-04.webp",
+      "desktopSrc": "/images/home/magazines/desktop-04.webp"
     },
     {
       "id": 5,
-      "src": "/images/home/magazines-05.webp"
+      "mobileSrc": "/images/home/magazines/mobile-05.webp",
+      "desktopSrc": "/images/home/magazines/desktop-05.webp"
     },
     {
       "id": 6,
-      "src": "/images/home/magazines-06.webp"
+      "mobileSrc": "/images/home/magazines/mobile-06.webp",
+      "desktopSrc": "/images/home/magazines/desktop-06.webp"
     }
   ],
   "lifestyle": [
     {
-      "src": "/images/home/lifestyle-01.webp",
+      "src": "/images/home/lifestyle/lifestyle-01.webp",
       "description": "Happy Birthday Mega Power Star ram Charan tej | Biography | lifestyle | Food habits"
     },
     {
-      "src": "/images/home/lifestyle-02.webp",
+      "src": "/images/home/lifestyle/lifestyle-02.webp",
       "description": "Happy Birthday Mega Power Star ram Charan tej | Biography | lifestyle | Food habits"
     },
     {
-      "src": "/images/home/lifestyle-03.webp",
+      "src": "/images/home/lifestyle/lifestyle-03.webp",
       "description": "Happy Birthday Mega Power Star ram Charan tej | Biography | lifestyle | Food habits"
     },
     {
-      "src": "/images/home/lifestyle-04.webp",
+      "src": "/images/home/lifestyle/lifestyle-04.webp",
       "description": "Happy Birthday Mega Power Star ram Charan tej | Biography | lifestyle | Food habits"
     },
     {
-      "src": "/images/home/lifestyle-05.webp",
+      "src": "/images/home/lifestyle/lifestyle-05.webp",
       "description": "Happy Birthday Mega Power Star ram Charan tej | Biography | lifestyle | Food habits"
     },
     {
-      "src": "/images/home/lifestyle-06.webp",
+      "src": "/images/home/lifestyle/lifestyle-06.webp",
       "description": "Happy Birthday Mega Power Star ram Charan tej | Biography | lifestyle | Food habits"
     }
   ],
   "latestNews": [
     {
-      "src": "/images/home/latestNews-01.webp"
+      "src": "/images/home/latest-news/latestNews-01.webp"
     },
     {
-      "src": "/images/home/latestNews-02.webp"
+      "src": "/images/home/latest-news/latestNews-02.webp"
     },
     {
-      "src": "/images/home/latestNews-03.webp"
+      "src": "/images/home/latest-news/latestNews-03.webp"
     },
     {
-      "src": "/images/home/latestNews-04.webp"
+      "src": "/images/home/latest-news/latestNews-04.webp"
     },
     {
-      "src": "/images/home/latestNews-05.webp"
+      "src": "/images/home/latest-news/latestNews-05.webp"
     },
     {
-      "src": "/images/home/latestNews-06.webp"
+      "src": "/images/home/latest-news/latestNews-06.webp"
     },
     {
-      "src": "/images/home/latestNews-07.webp"
+      "src": "/images/home/latest-news/latestNews-07.webp"
     },
     {
-      "src": "/images/home/latestNews-08.webp"
+      "src": "/images/home/latest-news/latestNews-08.webp"
     },
     {
-      "src": "/images/home/latestNews-09.webp"
+      "src": "/images/home/latest-news/latestNews-09.webp"
     },
     {
-      "src": "/images/home/latestNews-10.webp"
+      "src": "/images/home/latest-news/latestNews-10.webp"
     }
   ]
 }

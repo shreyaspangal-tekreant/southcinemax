@@ -67,6 +67,9 @@ export default function MainFooter() {
             </div>
           </div>
         </div>
+        <div className="lg:border-t-2 lg:border-[#2E2E2E] mt-5 lg:mt-[4.69rem] lg:mb-[5.25rem] pt-[0.75rem]">
+          <p className="text-[#CDCDCD] text-[0.88rem] mb-0">Copyright &copy; 2024 Southcinemax. All rights reserved.</p>
+        </div>
       </div>
     </footer>
   );

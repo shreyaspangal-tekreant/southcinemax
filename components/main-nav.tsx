@@ -94,7 +94,7 @@ function MobileNavDrawer({ navLinks, setShowMenu }: any) {
       <IoClose onClick={() => setShowMenu(false)} className="text-[#fff] text-right absolute right-5 top-8 w-[25px] h-[25px]" />
       <ul className="flex flex-col gap-y-5 justify-end pr-[1.63rem] pt-[6.13rem]">
         {navLinks.map((link: any, index: number) => (
-          <li key={index} className={`text-[0.75rem] text-right ${link.active ? "text-[#fff]" : "text-[#7F7F7F]"}`}>
+          <li key={index} className={`text-[0.88rem] text-right ${link.active ? "text-[#fff]" : "text-[#7F7F7F]"}`}>
             <Link href={link.href}>{link.name}</Link>
           </li>
         ))}
